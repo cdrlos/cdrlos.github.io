@@ -1,1 +1,21 @@
-theme: jekyll-theme-minimal
+# Setup
+title:               Carlos Salinas' page
+tagline:             'Mathematics blog'
+description:         'Something'
+url:                 https://cdrlos.github.io
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Carlos Salinas
+  email:             cemiliosal@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y
