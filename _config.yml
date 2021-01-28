@@ -33,7 +33,6 @@ plugins:
 - jekyll-commonmark
 - jekyll-include-cache
 - jemoji
-- jekyll-katex
 
 # 3. Gem settings
 paginate: 2 # jekyll-paginate > items per page
@@ -147,10 +146,12 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
 #   facebook: "#3B5998"
 #   Email: true
 
-# KaTeX default values?
-# katex:
-#   js_path: "{{ Gem::lib_path }}/assets/js"  # Path used to search for katex.min.js
-#   rendering_options:
-#     # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
-#     throw_error: true                       # throwOnError - set to false if you want rendering to output error as text rather than a build error
-#     error_color: "#cc0000"                  # errorColor
+math:
+  engine: katex
+  katex:
+    css: https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css
+    js: https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
+    config:
+      # KaTeX config
+      throwOnError: false
+      errorColor: "#cc0000"
