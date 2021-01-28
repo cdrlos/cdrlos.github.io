@@ -94,10 +94,10 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
-title: "PensamientoAleator.io" # Site name or title, also used in jekyll-seo-tag
+title: "cdrlos.github.io" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://pensamientoaleator.io" # Site url, also used in jekyll-seo-tag
+url: "https://cdrlos.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/cdrlos/cdrlos.github.io"
 email: "cemiliosal@gmail.com"
@@ -139,7 +139,7 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
   # Twitter: https://twitter.com/DavidDarnes
   LinkedIn: https://www.linkedin.com/in/carlos-salinas-64588b160
   GitHub: https://github.com/cdrlos
-  link: https://pensamientoaleator.io
+  link: https://cdrlos.github.io
   RSS: /feed.xml
 
 # sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
