@@ -48,10 +48,11 @@ social: # jekyll-seo-tag > social overrides
     #- https://www.facebook.com/daviddarnes
     - https://www.linkedin.com/in/carlos-salinas-64588b160
     - https://github.com/cdrlos
-# markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
-# commonmark:
-  # options: ["SMART", "FOOTNOTES"]
-  # extensions: ["strikethrough", "autolink", "table"]
+
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  math_engine_opts: {}
 
 # 4. Jekyll settings
 sass:
@@ -145,13 +146,3 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
 #   Twitter: "#0d94e7"
 #   facebook: "#3B5998"
 #   Email: true
-
-math:
-  engine: katex
-  katex:
-    css: https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css
-    js: https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
-    config:
-      # KaTeX config
-      throwOnError: false
-      errorColor: "#cc0000"
