@@ -32,7 +32,6 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
-    execjs (2.7.0)
     ffi (1.14.2)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
@@ -64,9 +63,6 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
-    jekyll-katex (1.0.0)
-      execjs (~> 2.7)
-      jekyll (>= 3.6, < 5.0)
     jekyll-mentions (1.6.0)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
@@ -123,7 +119,6 @@ PLATFORMS
 
 DEPENDENCIES
   alembic-jekyll-theme!
-  jekyll-katex
 
 BUNDLED WITH
    2.2.6
