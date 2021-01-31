@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Classification Problems
+feature_image: "https://picsum.photos/id/941/1300/400"
 ---
 
 # What are they?

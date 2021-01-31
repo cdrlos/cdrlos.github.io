@@ -3,30 +3,7 @@ title: Start blogging
 feature_text: |
   ## My Blog
   Let's get started.
-#feature_image: "https://picsum.photos/id/922/1300/400"
-#feature_image: "https://picsum.photos/id/926/1300/400"
-# feature_image: "https://picsum.photos/id/930/1300/400"
-#feature_image: "https://picsum.photos/id/941/1300/400"
-#feature_image: "https://picsum.photos/id/947/1300/400"
-#feature_image: "https://picsum.photos/id/950/1300/400"
-#feature_image: "https://picsum.photos/id/970/1300/400"
-#feature_image: "https://picsum.photos/id/971/1300/400"
-#feature_image: "https://picsum.photos/id/972/1300/400"
-#feature_image: "https://picsum.photos/id/979/1300/400"
-#feature_image: "https://picsum.photos/id/986/1300/400"
-#feature_image: "https://picsum.photos/id/989/1300/400"
-#feature_image: "https://picsum.photos/id/990/1300/400"
-#feature_image: "https://picsum.photos/id/991/1300/400"
-#feature_image: "https://picsum.photos/id/1009/1300/400"
-#feature_image: "https://picsum.photos/id/1009/1300/400"
-#feature_image: "https://picsum.photos/id/185/1300/400"
-#feature_image: "https://picsum.photos/id/38/1300/400"
-#feature_image: "https://picsum.photos/id/427/1300/400"
-#feature_image: "https://picsum.photos/id/866/1300/400"
-#feature_image: "https://picsum.photos/id/872/1300/400"
-#feature_image: "https://picsum.photos/id/922/1300/400"
-#feature_image: "https://picsum.photos/id/950/1300/400"
-feature_image: "https://picsum.photos/id/302/1300/400"
+feature_image: "https://picsum.photos/id/930/1300/400"
 excerpt: "Almost there."
 math: true
 ---
