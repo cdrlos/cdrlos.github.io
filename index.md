@@ -172,3 +172,5 @@ end
 
 {% include figure.html image="https://picsum.photos/1600/800?image=894" alt="Image with just alt text" %}{% endraw %}
 ```
+
+Let me drop a huge black pill for you boyos.
