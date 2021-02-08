@@ -8,6 +8,7 @@ excerpt: "Almost there."
 math: true
 ---
 
+<<<<<<< HEAD
 Welcome to my blog. This website here will showcase some of my current projects as well as offer me a platform to make blog posts. I briefly considred making blog posts on Medium to get myself hired, but I opted for GitHub since I belive this will give me the most flexibility at the expense of some overhead. Enjoy!
 
 Here is some Javascript for you:
@@ -16,3 +17,5 @@ Here is some Javascript for you:
 const result = pipeline(100, [adder(1), adder(2)])
 console.log(`adding 1 and 2 to 100 -> ${result}`)
 ~~~
+=======
+>>>>>>> cb3b0228da9e5449c6806dcabd3b2af85c4d1936
