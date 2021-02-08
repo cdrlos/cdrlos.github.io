@@ -1,7 +1,6 @@
 ---
 title: Deloitte fact sheet
 layout: page
-math: true
 ---
 
 ## About Deloitte
