@@ -95,7 +95,7 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
-title: "cdrlos.github.io" # Site name or title, also used in jekyll-seo-tag
+title: "A portfol.io of my own" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "A sample portfolio for myself" # Site description and default description, also used in jekyll-seo-tag
 url: "https://cdrlos.github.io" # Site url, also used in jekyll-seo-tag
@@ -129,6 +129,8 @@ navigation_header:
   url: /categories/
 - title: Search
   url: /search/
+- title: Notes
+  url: /notes/
 
 navigation_footer:
 - title: Modified from Alembic
