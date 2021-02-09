@@ -1,24 +1,10 @@
 ---
 title: Home
 feature_text: |
-  ## A portfolio of my own
-  Currently under construction
-feature_image: "https://picsum.photos/id/930/1300/400"
+ # <span style="color:white">Under construction!!</span>
+feature_image: "https://images.unsplash.com/photo-1563257764-ec4bd2983cbe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
 excerpt: "Almost there."
 math: true
 ---
 
-Welcome to my blog. This website here will showcase some of my current projects as well as offer me a platform to make blog posts. I briefly considred making blog posts on Medium, but I opted for GitHub since I belive this will give me the most flexibility. Enjoy!
-
-Here is some Javascript for you:
-
-~~~ javascript
-const result = pipeline(100, [adder(1), adder(2)])
-console.log(`adding 1 and 2 to 100 -> ${result}`)
-~~~
-
-And some math brought to you by [KaTeX](https://katex.org), it's blazing fast.
-
-$$ X_k = \sum_{n=0}^{N-1}x_n e^{-i2\pi kn/N}, \qquad k=0,\dotsc, N-1.$$
-
-This is cool.
+Some stuff about blah blah my blog.
