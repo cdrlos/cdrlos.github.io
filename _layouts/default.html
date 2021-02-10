@@ -12,6 +12,10 @@
 
     {% endif %}
 
+    {% if page.plotly %}
+      <head><!-- Include Plotly.js --><script src="https://cdn.plot.ly/plotly-latest.min.js"></script></head>
+    {% endif %}
+
     {% if page.indexing == false %}
       <meta name="robots" content="noindex">
     {% endif %}

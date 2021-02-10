@@ -1,21 +1,21 @@
 // // Background colours
-$backgroundColour: #fcfdfd !default;
-$codeBackgroundColour: #f7f7fa !default;
-$featureBackgroundColour: #f9f9fb !default;
-$accentColour: #7c1657 !default;
+$backgroundColour: #ffffff !default;
+$codeBackgroundColour: #f9fafb !default;
+$featureBackgroundColour: #ffffff !default;
+$accentColour: #bd2284 !default;
 
 // Text colours
-$headingColour: #061a25 !default;
-$bodyColour: #041118 !default;
-$linkColour: #16577c !default;
-$hoverColour: #7c1657 !default;
+$headingColour: #11425e !default;
+$bodyColour: #0d344b !default;
+$linkColour: #2284bd !default;
+$hoverColour: #bd2284 !default;
 $focusColour: #d22693 !default;
-$captionColour: #8a8e90 !default;
+$captionColour: #9fb3be !default;
 $white: #ffffff !default;
 
 // Typography
 $bodytype: (
-  font-family: "'Noto Serif', serif",
+  font-family: "'PT Serif', serif",
   regular: 400,
   bold: 700,
   italic: italic,
@@ -23,19 +23,22 @@ $bodytype: (
 ) !default;
 
 $headingtype: (
-  font-family: "'Roboto Slab', serif",
+  font-family: "'PT Sans Caption', sans",
   regular: 400,
   bold: 700,
   cap-height: 0.75
 ) !default;
 
 $monospacetype: (
-  font-family: "'Hack', monospace",
+  font-family: "'PT Mono', monospace",
   regular: 400,
   cap-height: 0.68
 ) !default;
 
 // Font import, if you're using a non-standard web font
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono:400,700");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 @import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css');

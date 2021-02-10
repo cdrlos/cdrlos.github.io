@@ -69,7 +69,7 @@ collections:
     output: true
     description: "Thought about computation, natural languages, mathematics, AI, and much more" # The post list page content
     feature_text: |
-      Welcome to the blog
+      ## Welcome to the blog
     feature_image: "https://picsum.photos/id/930/1300/400"
 
 # 6. Jekyll collections settings
