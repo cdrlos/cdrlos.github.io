@@ -16,7 +16,7 @@ $$\hat f(\xi) = \int_{-\infty}^{\infty}f(x)e^{-2\pi i x\xi}\,dx $$
 delivered to you super fast by [Katex](https://katex.org).
 
 
-How about some graphs?
+How about some box-plots?
 
 <div id="myDiv">
 <script type="text/javascript">
@@ -79,7 +79,7 @@ Plotly.newPlot('myDiv', data, layout);
 </script>
 </div>
 
-And the commands used to generate it:
+And the commands used to generate it, taken straight from [Plotly](https://plotly.com)
 
 ``` javascript
 var trace1 = {
