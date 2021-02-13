@@ -15,7 +15,7 @@ var layout = {
   title: {
     text:'Plot Title',
     font: {
-      family: 'Hack, monospace',
+      family: 'Courier New, monospace',
       size: 24
     },
     xref: 'paper',
@@ -25,7 +25,7 @@ var layout = {
     title: {
       text: 'x Axis',
       font: {
-        family: 'Hack, monospace',
+        family: 'Courier New, monospace',
         size: 18,
         color: '#7f7f7f'
       }
