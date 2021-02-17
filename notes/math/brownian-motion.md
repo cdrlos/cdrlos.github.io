@@ -8,13 +8,17 @@ This topic is seriously involved. Thus, I will not attempt to give it a comprehe
 
 ## Definition of Brownian motion
 
-Brownian motion proper is defined as a [stochastic process](https://en.wikipedia.org/wiki/Stochastic_process) $$\{B_t\}$$ that satisfies the following properties:
+Brownian motion proper is defined as a [stochastic process](https://en.wikipedia.org/wiki/Stochastic_process) $$\{B_{t}\}$$ that satisfies the following properties:
 
-1. The difference $$B_t-B_s$$, for $$t>s$$, is independent of $$B_u$$ for $$u\leq s$$; we say the process has _independent increments_.
+1. The difference $$B_{t}-B_{s}$$, for $$t > s$$, is independent of $$B_{u}$$ for $$u\leq s$$; we say the process has _independent increments_.
 
-1. The difference $$B_t-B_s$$, for $$t>s$$, is independent of the past, i.e. independent of $$B_u$$, for $$0\leq u\leq s$$.
-1. The difference $$B_t-B_s$$ is normally distributed with mean $$0$$ and variance $$t-s$$.
-1. $$B_t$$, $$t\geq 0$$ is continuous with respect to $$t$$.
+1. The difference $$B_{t}-B_{s}$$, for $$t > s$$, is independent of the past, i.e. independent of $$B_{u}$$, for $$0\leq u\leq s$$.
+1. The difference $$B_{t}-B_{s}$$ is normally distributed with mean $$0$$ and variance $$t-s$$.
+1. $$B_{t}$$, $$t\geq 0$$ is continuous with respect to $$t$$.
 
-<script src="{{ base.url | prepend: site.url }}/assets/scripts/random-plot.js">
+No, it just will not show up will it?
+
+<div id="almost-brownian-motion">
+<script src="{{ base.url | prepend: site.url }}/assets/plotly/almost-brownian-motion.js">  
 </script>
+</div>

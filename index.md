@@ -1,7 +1,7 @@
 ---
 title: Home
 feature_text: |
-  # <span style="color:white">Under construction!!</span>
+  ## <span style="color:white">Under construction!!</span>
 feature_image: "https://images.unsplash.com/photo-1563257764-ec4bd2983cbe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
 math: true
 plot: true
@@ -13,14 +13,14 @@ In the mean time enjoy looking at the Fourier transform
 
 $$\hat f(\xi) = \int_{-\infty}^{\infty}f(x)e^{-2\pi i x\xi}\,dx $$
 
-delivered to you super fast by [Katex](https://katex.org).
+deliver to you super fast by [KaTeX](https://katex.org).
 
 How about some box-plots?
 
 <div id="myDiv">
 <script type="text/javascript">
 var trace1 = {
-  y: [0.75, 5.25, 5.5, 6, 6.2, 6.6, 6.80, 7.0, 7.2, 7.5, 7.5, 7.75, 8.15, 8.15, 8.65, 8.93, 9.2, 9.5, 10, 10.25, 11.5, 12, 16, 20.90, 22.3, 23.25],
+  y: [0.75, 5.25, 5.5, 6, 6.2, 6.6, 6.80, 7.0, 7.2, 7.5, 7.5, 7.75, 8.15, 8.15, 8.65, 8.93, 9.2, 9.5, 10, 10.25, 11.5, 12, 16, 20.90, 22.3, 23.25], 
   type: 'box',
   name: 'All Points',
   jitter: 0.3,
@@ -243,3 +243,7 @@ var layout = {
 
 Plotly.newPlot("myDiv", data, layout);
 ```
+
+Check this out
+
+<link rel="import" rel="http://127.0.0.1:4000/assets/plotly/where_is_iss.html"/>

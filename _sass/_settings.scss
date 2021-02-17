@@ -36,6 +36,8 @@ $monospacetype: (
 ) !default;
 
 // Font import, if you're using a non-standard web font
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,700");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css');
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/noto-serif@4.2.1/index.css");
+//@import url("https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.2.1/index.css");
+//@import url("https://cdn.jsdelivr.net/npm/@fontsource/noto-mono@4.2.1/index.css");
+@import url("https://cdn.jsdelivr.net/npm/@openfonts/montserrat_all@1.44.2/index.css");
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css");

@@ -27,5 +27,3 @@ They have a rating work-flow diagrammed out for me. It goes like this
 - Understand user intent.
 - Establish relevance.
 - Check data accuracy: name accuracy, address accuracy, pin accuracy.
-
-Is this just busy work? Am I enabling plagiarism from Google Maps, etc.?
