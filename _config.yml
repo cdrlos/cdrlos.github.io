@@ -1,6 +1,6 @@
 # Site settings
-title_left    : "CDRLOS"
-title_right   : "" # default: ""
+title_left    : "Under"
+title_right   : "Worked" # default: ""
 description   : "A simple portfolio website to showcase my work."
 keywords      : "computer science, artificial intelligence, lisp, mathematics, natural languages"
 url           : https://cdrlos.github.io # site url

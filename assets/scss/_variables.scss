@@ -1,25 +1,24 @@
 // Typography
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
-@import url("https://fonts.googleapis.com/css?family=Inconsolata:400");
-@import url("https://fonts.googleapis.com/css?family=Cousine:400");
+// @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+// @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700");
+// @import url("https://fonts.googleapis.com/css?family=Cousine:400");
 
-$base-font-family: 'Roboto', mono;
-$heading-font-family: 'Roboto Slab', serif;
-$code-font: 'Cousine', monospace;
+$base-font-family: $garamond;
+$heading-font-family: $helvetica;
+$code-font: $consolas;
 
 // Font Sizes
-$base-font-size: 1.15em;
-$code-font-size: 0.6667 * $base-font-size;
+$base-font-size: 1.2em;
+$code-font-size: 0.8 * $base-font-size;
 
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: .52em;
+$base-border-radius: 0.52em;
 $base-spacing: $base-line-height * 1em;
-$small-spacing: $base-spacing / 2;
+$small-spacing: $base-spacing / 5;
 $base-z-index: 0;
 
 // Colors
@@ -33,7 +32,7 @@ $medium-gray-color: #999;
 $light-gray-color: #ccc;
 
 // Font Colors
-$base-font-color: rgba($dark-gray-color, .8);
+$base-font-color: rgba($dark-gray-color, .9);
 
 // Border
 $base-border-color: $light-gray-color;
