@@ -1,61 +1,24 @@
+---
+layout: compress
+published: true
+---
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <!-- General meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {% if page.math %}
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
-      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
-      <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-
-    {% endif %}
-
-    {% if page.plot %}
-      <head><!-- Include Plotly.js --><script src="https://cdn.plot.ly/plotly-latest.min.js"></script></head>
-    {% endif %}
-
-    {% if page.indexing == false %}
-      <meta name="robots" content="noindex">
-    {% endif %}
-
-    {% if page.collectionpage %}
-      {% seo title=false %}
-
-      {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-      <title>{{ collectiondata.title }} - {{ site.title }}</title>
-      <meta property="og:title" content="{{ collectiondata.title }}">
-      <meta name="description" content="{{ collectiondata.description }}">
-      <meta property="og:description" content="{{ collectiondata.description }}">
-    {% else %}
-      {% seo %}
-    {% endif %}
-
-    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
-    <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
-
-    {% if site.css_inline == true %}
-      {% include site-styles.html %}
-    {% else %}
-      <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
-    {% endif %}
-
-    {% if site.favicons or site.avatarurl %}{% include site-favicons.html %}{% endif %}
-
-    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
-
-    {% include site-before-start.html %}
-  </head>
-
-  <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}">
-    {% include site-icons.svg %}
-
-    {{ content }}
-
-    {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
-
-    {% include site-before-end.html %}
+<html>
+  {% include head.html %}
+  {% if page.math %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  {% endif %}
+  <!-- {% if page.plot %} -->
+  <!-- <head><\!-- Include Plotly.js -\-><script src="https://cdn.plot.ly/plotly-latest.min.js"></script></head> -->
+  <!-- {% endif %} -->
+  <body>
+    <main class="wrapper">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </main>
+    {% include foot.html %}
   </body>
-
 </html>
