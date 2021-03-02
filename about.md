@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Here is some of my work. 
+Here's some of my recent work. 
