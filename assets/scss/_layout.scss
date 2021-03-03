@@ -71,7 +71,7 @@ hr {
 .site-header {
   border-bottom: 1px solid lighten($light-gray-color, 5%);
   margin-bottom: $small-spacing;
-  min-height: 20px;
+  min-height: 0px;
 }
 
 .intro {
@@ -95,9 +95,10 @@ hr {
   margin: 0 0 1em 0;
   cursor: pointer;
   letter-spacing: 0.8px;
+  font-family: $logo-font-family;
   font-size: 24px;
   line-height: 32x;
-  font-weight: 300;
+  font-weight: 700;
 
   span {
     font-weight: 700;
