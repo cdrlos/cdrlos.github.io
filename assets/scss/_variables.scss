@@ -1,15 +1,15 @@
 // Typography
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url("https://fonts.googleapis.com/css?family=Average+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Rokkitt:400,700");
 @import url("https://fonts.googleapis.com/css?family=Pacifico:400,700");
 @import url("https://fonts.googleapis.com/css?family=Cousine:400");
 @import url("https://www.jsdelivr.com/package/npm/hack-font");
 
-$logo-font-family: "Pacifico", $helvetica;
 $base-font-family: "Nunito", $helvetica;
 $heading-font-family: "Montserrat", $helvetica;
-$quote-font-family: "Average Sans", $helvetica;
+$logo-font-family: "Pacifico", $helvetica;
+$quote-font-family: "Rokkitt", $helvetica;
 $code-font-family: "Hack", "Cousine", $consolas;
 
 // Font Sizes
