@@ -95,10 +95,7 @@ hr {
   margin: 0 0 1em 0;
   cursor: pointer;
   letter-spacing: 0.8px;
-  background-image: linear-gradient(to left,
-                                    #3d2564, #325292, #78c848, #ffb200, #f27242, #aa361a,
-                                    #3d2564, #325292, #78c848, #ffb200, #f27242, #aa361a,
-                                    #3d2564, #325292, #78c848, #ffb200, #f27242, #aa361a);
+  background-image: linear-gradient(to left, #3d2564, #325292, #78c848, #ffb200, #f27242, #aa361a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 font-family: $logo-font-family;

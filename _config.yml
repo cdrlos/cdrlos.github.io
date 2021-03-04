@@ -3,7 +3,7 @@ title_left    : "Not A Unicorn"
 title_right   : "" # default: ""
 description   : "A simple portfolio website to showcase my work."
 keywords      : "computer science, artificial intelligence, lisp, mathematics, natural languages"
-url           : https://cdrlos.github.io # site url
+url           : "https://cdrlos.github.io" # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
