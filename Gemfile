@@ -5,6 +5,7 @@ group :jekyll_plugins do
     gem "bourbon"
     gem "jekyll-paginate"
     gem "kramdown-math-katex"
+    gem "jemoji"
 end
 gem 'html-proofer'
 gem 'tzinfo'

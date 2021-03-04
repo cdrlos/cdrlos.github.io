@@ -38,6 +38,7 @@ plugins:
   - bourbon
   - jekyll-paginate
   - kramdown-math-katex
+  - jemoji
 
 # navbar pages
 navbar:
