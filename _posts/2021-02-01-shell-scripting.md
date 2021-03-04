@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shit you can do on the shell
+title: Stuff you can do on the shell
 ---
 
 I recently applied for a programming slave job with [Smoothstack](https://wwww.smoothstack.com) (a _better_ [Revature](https://revature.com)?) and they had me take an assessment for their Java software engineering track. For some reason they consider Bash scripting to be important component of their admissions so I thought I'd write a post about it.
