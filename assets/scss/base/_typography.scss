@@ -83,7 +83,7 @@ blockquote {
   color: $dark-gray-color;
   line-height: 1.8;
   border-left: $small-spacing solid $light-gray-color;
-  background-color: lighten($light-gray-color, 15%);
+  background-color: lighten($light-gray-color, 9%);
   p {
     margin: 0;
   }
@@ -97,7 +97,7 @@ code {
   font-size: $code-font-size;
   margin: 0;
   padding: 0 5px;
-  background-color: lighten($light-gray-color, 13%);
+  background-color: lighten($light-gray-color, 9%);
 }
 
 pre {
