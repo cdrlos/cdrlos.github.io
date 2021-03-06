@@ -72,12 +72,12 @@ hr {
 }
 
 .site-header {
-  border-bottom: 1px solid lighten($light-gray-color, 12%);
+  border-bottom: 1px solid lighten($light-gray-color, 7%);
   margin-bottom: $small-spacing;
   min-height: 0px;
   // background-image: url("../img/squared_metal.png");
   // background-repeat: repeat-xy;
-  background-color: #eeeeee;
+  background-color: darken(#eeeeee, 5%);
 }
 
 .intro {
