@@ -48,6 +48,7 @@ navbar:
     title: Blog
 
 exclude:
+  - "face"
   - "archived"
   - "gulp"
   - "node_modules"
