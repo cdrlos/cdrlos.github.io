@@ -48,7 +48,8 @@ navbar:
     title: Blog
 
 exclude:
-  - "face"
+  - "face.md"
+  - "face-reveal.html"
   - "archived"
   - "gulp"
   - "node_modules"
