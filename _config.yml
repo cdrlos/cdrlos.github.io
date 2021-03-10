@@ -1,5 +1,5 @@
 # Site settings
-title_left    : "Not A Unicorn"
+title_left    : "Ce n'est pas ce qu'il semble"
 title_right   : "" # default: ""
 description   : "A simple portfolio website to showcase my work."
 keywords      : "Clojure, web dev, math, AI"
