@@ -14,7 +14,7 @@
     margin: 0;
     padding: $base-spacing;
     white-space: pre;
-    line-height: 23px;
+    line-height: 50%;
     overflow-x: auto;
     margin-bottom: 0;
     word-break: inherit;
@@ -27,6 +27,15 @@
     code {
       white-space: pre;
       padding: 0 !important;
+
+      // &[data-lang]::before {
+      //   color: #998;
+      //   content: attr(data-lang);
+      //   display: inline;
+      //   position: relative;
+      //   text-align: right;
+      //   text-transform: uppercase;
+      // }
 
       * {
         white-space: nowrap; // this sets all children inside to nowrap
