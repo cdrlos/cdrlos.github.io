@@ -108,11 +108,11 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 10%);
+    color: $brand-color-alt;
   }
 
   &:hover {
-    color: $text-color;
+    color: $brand-color-alt;
     text-decoration: underline;
   }
 
@@ -151,7 +151,7 @@ blockquote {
 pre,
 code {
   font-family: $coding-font-family;
-  @include relative-font-size(0.8125);
+  @include relative-font-size(0.825);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
