@@ -151,7 +151,7 @@ blockquote {
 pre,
 code {
   font-family: $coding-font-family;
-  @include relative-font-size(0.8325);
+  @include relative-font-size(0.8125);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;

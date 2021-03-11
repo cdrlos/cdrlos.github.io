@@ -55,3 +55,4 @@ plugins:
 
 exclude:
   - archive
+  - History.markdown
