@@ -1,0 +1,37 @@
+I"�<h2 id="introduction">Introduction</h2>
+<p>This post is a precursor to an upcoming post on the <a href="https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation">Black–Scholes
+equation</a> (and
+introduction to financial mathematics in general) and follows my previous post
+on random walks. Unfortunately for us, a thorough understanding of stochastic
+calculus is necessary to fully understand the equation. But before we can even
+start talking about stochastic calculus we need to review Brownian motion. Now
+this post is not meant to be a comprehensive bottom-up guide on the subject for
+that you can go read Durrett’s <a href="https://www.amazon.com/Probability-Cambridge-Statistical-Probabilistic-Mathematics/dp/0521765390">Probability: Theory and
+Examples</a>
+or Klebaner’s <a href="https://www.amazon.com/Introduction-Stochastic-Calculus-Applications-2Nd/dp/186094566X/ref=sr_1_2?dchild=1&amp;keywords=klebaner&amp;qid=1612983088&amp;s=books&amp;sr=1-2">Introduction to Stochastic Calculus with
+Applications</a>
+which is the book which introduced me to this subject.</p>
+
+<h3 id="brownian-motion-in-a-nutshell">Brownian motion in a nutshell</h3>
+<p>Brownian motion is named after the Scottish botanist <a href="https://en.wikipedia.org/wiki/Robert_Brown_(botanist,_born_1773)">Robert
+Brown</a> who is
+widely credited with being the first to observe and describe the motion. The
+story goes that Brown, attentively observing grains of pollen suspended in water
+[<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>], observed the jittery motion of tiny particles expelled by the pollen
+grains. In his words</p>
+
+<p>This is what he probably saw.</p>
+
+<p>Now getting back to the nitty-gritty of the task at hand.</p>
+
+<h2 id="defining-a-brownian-motion">Defining a Brownian motion</h2>
+<p>A Brownian motion requires</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>But why would he be looking at pollen suspended in water? As I recently found out, a lot of Brown’s work was devoted to showing that pollen characteristics can be used to aid in the classification of plants into genera. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

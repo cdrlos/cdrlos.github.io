@@ -1,0 +1,59 @@
+I"�<h3 id="introduction">Introduction</h3>
+
+<p>The random walk is perhaps everyone’s first introduction to the theory of
+stochastic processes. You many not even know what a stochastic process but if
+you’ve taken probability you’ve surely heard of the random walk. With my
+previous post on Brownian motion I mentioned that Brownian motion is the
+continuous analogue of the symmetric random walk. In this post I aim to
+formalize that and remind you of what exactly we mean by random walk–in case
+you need a refresher.</p>
+
+<h3 id="simple-random-walk-on-mathbfz2">Simple Random Walk on <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="bold">Z</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbf{Z}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">Z</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></h3>
+<p>We will start with the case of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="bold">Z</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbf{Z}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">Z</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> as it is the first non-trivial
+example of a simple random walk. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="bold">Z</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbf{Z}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">Z</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> is of course the integer
+lattice in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="bold">R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbf{R}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathbf">R</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> and has the prototypical basis <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">{</mo><mo stretchy="false">(</mo><mn>1</mn><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo><mo separator="true">,</mo><mo stretchy="false">(</mo><mn>0</mn><mo separator="true">,</mo><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{(1,0),(0,1)\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mopen">(</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mclose">}</span></span></span></span>.</p>
+
+<script>
+const rand = () => Math.random();
+var x = [1, 2, 3, 4, 5];
+const new_data = (trace) => Object.assign(trace, {y: x.map(rand)});
+
+// add random data to three line traces
+var data = [
+	{mode:'lines', line: {color: "#b55400"}},
+	{mode: 'lines', line: {color: "#393e46"}},
+	{mode: 'lines', line: {color: "#222831"}}
+].map(new_data);
+
+var layout = {
+	title: 'User Zoom Persists<br>When uirevision Unchanged',
+	uirevision:'true',
+	xaxis: {autorange: true},
+	yaxis: {autorange: true}
+};
+
+Plotly.react('myDiv', data, layout);
+
+var myPlot = document.getElementById('myDiv');
+
+var cnt = 0;
+var interval = setInterval(function() {
+	data = data.map(new_data);
+
+	// user interaction will mutate layout and set autorange to false
+	// so we need to reset it to true
+	layout.xaxis.autorange = true;
+	layout.yaxis.autorange = true;
+
+	// not changing uirevision will ensure that user interactions are unchanged
+	// layout.uirevision = rand();
+
+	Plotly.react('myDiv', data, layout);
+	if(cnt === 100) clearInterval(interval);
+}, 2500);
+</script>
+
+<div id="myDiv"></div>
+
+<p>Hey, why doesn’t that div show?</p>
+:ET

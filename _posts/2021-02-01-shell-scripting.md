@@ -12,8 +12,8 @@ I'd write a post to jog my memory.
 
 This post has the potential to get out of hand so I'm gonna keep the content
 down to the very basics: script parameters, conditional statements, for loops,
-and strings. Everything you find here is infinitely better explained in [[^1]]
-or even better the official GNU reference manual [[^2]].
+and strings. Everything you find here is infinitely better explained in [^1]
+or even better the official GNU reference manual [^2].
 
 **Disclaimer:**{: style='color:red; opacity:0.8'} When I say shell scripting I
 really mean Bash scripting, i.e. `bash`---not `zsh`, not `ksh`, especially not

@@ -1,72 +1,57 @@
-# Site settings
-title_left    : "Ce n'est pas ce qu'il semble"
-title_right   : "" # default: ""
-description   : "A simple portfolio website to showcase my work."
-keywords      : "Clojure, web dev, math, AI"
-url           : "https://cdrlos.github.io" # site url
-baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
-cover         : "" # image uri like logo/cover image for site seo
+title: Ce n'est pas ce qu'il semble
+author: Carlos Salinas
+email: carlos-e-salinas@protonmail.com
+description: > # this means to ignore newlines until "twitter_username:"
+  A small portfolio to showcase my work.
 
-#google_analytics  : UA-XXXXX-XX
-#twitter_username  : ""
-#comments_enabled  : false # if enabled (set to true), please provide your disqus_username
-#disqus_shortname  : ""
-postshare_enabled : false
+# social links
+twitter_username: cdrlos
+github_username:  cdrlos
+rss: rss
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jekyll
+# linkedin_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: jekyll
+# googleplus_username: +jekyll
+
+# Mastodon instances
+# mastodon:
+# - username: jekyll
+#   instance: example.com
+# - username: jekyll2
+#   instance: example.com
+
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.html
 
 # Build settings
-permalink   : /:year/:title/
-markdown    : kramdown
-kramdown    :
+theme: minima
+
+markdown: kramdown
+kramdown:
   math_engine: katex
   math_engine_opts: {}
   syntax_highlighter: rouge
   syntax_highlighter_opts: {}
 
-source      : ./
-destination : ./_site
-
-# Sass configuration
-sass:
-  sass_dir  : assets/scss
-  style     : compressed # expanded
-
-# Author settings
-author:
-  name     : "Carlos Salinas"
-
 plugins:
-  - jekyll-sitemap
-  - bourbon
-  - jekyll-paginate
-  - kramdown-math-katex
-  - jemoji
-
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jemoji
+ - kramdown-math-katex
 
 exclude:
-  - "face.md"
-  - "face-reveal.html"
-  - "archived"
-  - "gulp"
-  - "node_modules"
-  - "bower"
-  - "bower_components"
-  - "config.rb"
-  - "src"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - ".rvmrc"
-  - ".rbenv-version"
-  - "package.json"
-  - "gulpfile.js"
-  - "README.md"
-  - "Rakefile"
-  - "changelog.md"
-  - "script"
-  - "vendor"
-  - "thinkspace.gemspec"
+  - archive
