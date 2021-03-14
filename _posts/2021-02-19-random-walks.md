@@ -13,6 +13,9 @@ The random walk is perhaps everyone's first introduction to the theory of stocha
 
 We will start with the case of $$\mathbf{Z}^2$$ as it is the first non-trivial example of a simple random walk. $$\mathbf{Z}^2$$ is of course the integer lattice in $$\mathbf{R}^2$$ and has the prototypical basis $$\{(1,0),(0,1)\}$$.
 
+The following is just a test. I can't get D3js to work with Jekyll yet. Plotly appears to be working?
+
+<div id="myDiv">
 <script>
 const rand = () => Math.random();
 var x = [1, 2, 3, 4, 5];
@@ -27,9 +30,9 @@ var data = [
 
 var layout = {
 title: 'User Zoom Persists<br>When uirevision Unchanged',
-       uirevision:'true',
-       xaxis: {autorange: true},
-       yaxis: {autorange: true}
+uirevision:'true',
+xaxis: {autorange: true},
+yaxis: {autorange: true}
 };
 
 Plotly.react('myDiv', data, layout);
@@ -38,21 +41,19 @@ var myPlot = document.getElementById('myDiv');
 
 var cnt = 0;
 var interval = setInterval(function() {
-  data = data.map(new_data);
+data = data.map(new_data);
 
-  // user interaction will mutate layout and set autorange to false
-  // so we need to reset it to true
-  layout.xaxis.autorange = true;
-  layout.yaxis.autorange = true;
+// user interaction will mutate layout and set autorange to false
+// so we need to reset it to true
+layout.xaxis.autorange = true;
+layout.yaxis.autorange = true;
 
-  // not changing uirevision will ensure that user interactions are unchanged
-  // layout.uirevision = rand();
+// not changing uirevision will ensure that user interactions are unchanged
+// layout.uirevision = rand();
 
-  Plotly.react('myDiv', data, layout);
-  if(cnt === 100) clearInterval(interval);
-  }, 2500);
+Plotly.react('myDiv', data, layout);
+if(cnt === 100) clearInterval(interval);
+}, 2500);
 </script>
 
-<div id="myDiv"></div>
-
-Hey, why doesn't that div show?
+</div>

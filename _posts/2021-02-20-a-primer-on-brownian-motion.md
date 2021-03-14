@@ -3,6 +3,7 @@ layout: post
 title: A Primer on Brownian Motion
 keywords: "brownian motion"
 math: true
+plotly: true
 ---
 
 ## Introduction
