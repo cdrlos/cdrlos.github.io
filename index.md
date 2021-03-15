@@ -7,3 +7,5 @@
 #
 layout: home
 ---
+
+Posts on math, AI, visualizations, language, Clojure.
