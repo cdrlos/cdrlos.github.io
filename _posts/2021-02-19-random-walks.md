@@ -12,7 +12,3 @@ The random walk is perhaps everyone's first introduction to the theory of stocha
 ### Simple Random Walk on $$\mathbf{Z}^2$$
 
 We will start with the case of $$\mathbf{Z}^2$$ as it is the first non-trivial example of a simple random walk. $$\mathbf{Z}^2$$ is of course the integer lattice in $$\mathbf{R}^2$$ and has the prototypical basis $$\{(1,0),(0,1)\}$$.
-
-The following is just a test. I can't get D3js to work with Jekyll yet. Plotly appears to be working?
-
-{% include plotly/brownian_mot.html %}

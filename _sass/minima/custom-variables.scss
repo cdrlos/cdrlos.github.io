@@ -1,1 +1,15 @@
 // Placeholder to allow overriding predefined variables smoothly.
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Pacifico:400,700");
+@import url("https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css");
+
+
+$base-font-family: "Nunito";
+$code-font-family: "Hack";
+$heading-font-family: "Montserrat";
+$curly-font-family: "Pacifico";
+
+$code-background-color: #272822;
+// $background-color: #fefefe;
+$head-background-color: darken($background-color, 10%);

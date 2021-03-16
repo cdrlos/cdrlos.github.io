@@ -16,6 +16,8 @@ Brownian motion is named after the Scottish botanist [Robert Brown](<https://en.
 
 This is what he probably saw.
 
+{% include plotly/bmot.html %}
+
 Now getting back to the nitty-gritty of the task at hand.
 
 ## Defining a Brownian motion
